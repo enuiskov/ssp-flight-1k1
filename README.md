@@ -1,7 +1,9 @@
 # SSP Flight 1K1
-The Buran Orbiter November 15, 1988 test flight reconstruction.
+The Buran Orbiter November 15, 1988 test flight reconstruction. 
 
-![scr](https://user-images.githubusercontent.com/100083998/160516510-4aac0205-abd5-4565-9e2f-4f8351b6a220.jpg)
+![scr](https://user-images.githubusercontent.com/100083998/160693889-1c0130cf-f9a3-4b8c-bff7-fd7e3bf8f5a3.jpg)
+![scr3_640](https://user-images.githubusercontent.com/100083998/160693909-6d8c57f5-3239-4714-bc0f-f8000d9eeb79.jpg)
+![scr2_640](https://user-images.githubusercontent.com/100083998/160693935-8cf7c9cc-a654-4859-88a3-c85dfe765649.gif)
 
 ## Controls 
 
@@ -40,5 +42,11 @@ The Buran Orbiter November 15, 1988 test flight reconstruction.
 | `[Shift]+[Home\|End]` | Tail/Head wind component                                         |
 | `[Shift]+[Ins\|PgUp]` | Up-/Downflow                                                     |
 
+## Documents
+- [Buran.Ru](https://www.buran.ru)
+  - [Used diagram](https://www.buran.ru/htm/algoritm.htm)
+- [Wikipedia](https://en.wikipedia.org/wiki/Buran_\(spacecraft\))
+- [NASA-TP-170019800023921](https://ntrs.nasa.gov/citations/19800023921)
 
-
+---
+[Open online](https://enuiskov.github.io/ssp-flight-1k1/UVS/Release/ssp-flight-1k1/index.html)
