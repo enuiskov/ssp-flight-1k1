@@ -697,7 +697,7 @@ stuff
 								fDrawGraph("MSpd",  "#ff6666", "TriangleT", +500,    -250);
 								fDrawGraph("IAS",   "#ffff00", "TriangleT", +500,    -0.5);
 
-								fDrawGraph("Vel",   "#ffffff", "TriangleT", +500,    -1.0);
+								//~~fDrawGraph("Vel",   "#ffffff", "TriangleT", +500,    -1.0);
 								
 								fDrawGraph("VSpd",  "#ff6666", "TriangleT", -500,    -2.0);
 								fDrawGraph("VSpd2", "#ffff00", "TriangleT", -500,    -2.0);

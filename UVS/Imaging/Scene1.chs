@@ -18,7 +18,7 @@ stuff
 			 {
 				get once()
 				{
-					var oVV = []; for(var _EE = gApp.ApproachDiagram.VymData.Entries, cE,Ei = 0; cE = _EE[Ei], Ei < _EE.Length; Ei+=100)
+					var oVV = []; for(var _EE = gApp.ApproachDiagram.VymData.Entries, cE,Ei = 0; cE = _EE[Ei], Ei < _EE.Length; Ei += 1)
 					{
 						//oVV.Add(cE.Value.Z, cE.Value.X, cE.Value.H);
 						oVV.Add(cE.Value.Position.X, cE.Value.Position.Y, cE.Value.Position.Z);
@@ -184,7 +184,7 @@ stuff
 					
 					for(var _VV = _Geom.vertices, cV, Vi = 0; cV = _VV[Vi]; Vi++)
 					{
-						cV.z = Random() * Max(0, cV.length() -  4000) * 0.02;
+						cV.z = Random() * Max(0, cV.length() -  4000) * 0.002;
 					}
 					_Geom.computeFaceNormals();
 					_Geom.computeVertexNormals();
