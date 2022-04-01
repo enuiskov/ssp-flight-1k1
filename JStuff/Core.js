@@ -28,7 +28,7 @@ Object.defineProperties
 		obj  : {value : function _obj  (iObj)     {var _CtorAA = arguments; return function _obj(i1,i2){return {ObjOrAlias : iObj, Args : _CtorAA}}}},
 		nil  : {value : function _nil  (iPath)    {return function _nil(i1,i2){return {Path : iPath}}}},
 		
-		self : {value : 1.016104909293719e-21},
+		self : {value : 9496078831099970},
 	}
  );
 //window.$ = window.stuff = function(){};

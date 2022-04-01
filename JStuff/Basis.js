@@ -65,7 +65,11 @@
 		 (
 			$P,
 			{
+				ToString  : {value : $P.toString},
 				Length    : {get : function(){return this.length;}, set : function(iV){this.length = iV;}, enumerable : false},
+				
+				First     : {get : function(){return this[0]}},
+				Last      : {get : function(){return this[this.length - 1]}},
 
 				Push      : {value : $P.push},
 				Pop       : {value : $P.pop},
@@ -74,11 +78,15 @@
 				ForEach   : {value : $P.forEach},
 				Map       : {value : $P.map},
 				
-				Concat    : {value : $P.concat},
-				Slice     : {value : $P.slice},
-				Clone     : {value : $P.slice},
+				
 				Clear     : {value : function(){this.length = 0}},
-
+				Clone     : {value : $P.slice},
+				Concat    : {value : $P.concat},
+				Join      : {value : $P.join},
+				Slice     : {value : $P.slice},
+				
+				
+				
 				Contains  : {value : function(iS){return this.indexOf(iS) != -1}},
 
 				Add       : {value : $P.push},
@@ -86,19 +94,41 @@
 				Remove    : {value : function(iItem){return this.RemoveAt(this.indexOf(iItem))}},
 				RemoveAt  : {value : function(iIndex)
 				 {
-					var _Bef = this.slice(0, iIndex);
-					var _Aft = this.slice(iIndex + 1, this.length);
+					var _BefII = this.slice(0, iIndex);
+					var _AftII = this.slice(iIndex + 1, this.length);
 					
 					this.length = 0;
 
-					this.AddRange(_Bef);
-					this.AddRange(_Aft);
+					this.AddRange(_BefII);
+					this.AddRange(_AftII);
+				 }},
+				InsertAt  : {value : function(iItem, iIndex)
+				 {
+					var _BefII = this.slice(0, iIndex);
+					var _AftII = this.slice(iIndex, this.length);
+
+					this.length = 0;
+
+					this.AddRange(_BefII);
+					this.Add(iItem);
+					this.AddRange(_AftII);
 				 }},
 				Enqueue   : {value : $P.push},
 				Dequeue   : {value : $P.shift},
 			}
 		 );
 	 }
+	$Mod(Boolean);
+	 {
+		Object.defineProperties
+		(
+			$P,
+			{
+				ToString : {value : $P.toString},
+			}
+		);
+	 }
+
 	$Mod(String);
 	 {
 		Object.defineProperties
@@ -109,6 +139,7 @@
 
 				Length       : {get : function(){return this.length;}, enumerable : false},
 
+				CharAt       : {value : $P.charAt},
 				Substring    : {value : $P.substring},
 				Trim         : {value : $P.trim},
 				TrimStart    : {value : undefined},
@@ -123,6 +154,8 @@
 
 				StartsWith   : {value : function(iS){return this.substring(0,iS.length) == iS;}},
 				EndsWith     : {value : function(iS){return this.substring(this.length - iS.length, this.length) == iS;}},
+
+				Match        : {value : $P.match},
 
 				ToLower      : {value : $P.toLowerCase},
 				ToUpper      : {value : $P.toUpperCase},
@@ -329,7 +362,7 @@
 			}
 			return _VVs / _VVc;
 		 };
-		$F.Mix       = function(ixV,iyV, iA){return (ixV * (1 - iA)) + (iyV * iA)};
+		$F.Mix      = function(ixV,iyV, iA){return (ixV * (1 - iA)) + (iyV * iA)};
 
 		$F.Clamp    = function(iNum, iMin_Max, iMax)
 		 {
@@ -381,6 +414,9 @@
 		{
 			throw "NI";
 		};
+
+		$P.Test  = $P.test;
+		$P.Match = $P.match;
 	 }
 	$Mod(CanvasRenderingContext2D);
 	 {
