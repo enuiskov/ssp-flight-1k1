@@ -1,5 +1,5 @@
 # SSP Flight 1K1
-The Buran Orbiter November 15, 1988 test flight reconstruction. 
+The Buran Orbiter November 15, 1988 test flight reconstruction.
 
 ![scr](https://user-images.githubusercontent.com/100083998/160693889-1c0130cf-f9a3-4b8c-bff7-fd7e3bf8f5a3.jpg)
 ![scr3_640](https://user-images.githubusercontent.com/100083998/160693909-6d8c57f5-3239-4714-bc0f-f8000d9eeb79.jpg)
@@ -42,11 +42,17 @@ The Buran Orbiter November 15, 1988 test flight reconstruction.
 | `[Shift]+[Home\|End]` | Tail/Head wind component                                         |
 | `[Shift]+[Ins\|PgUp]` | Up-/Downflow                                                     |
 
-## Documents
+### References
 - [Buran.Ru](https://www.buran.ru)
-  - [Used diagram](https://www.buran.ru/htm/algoritm.htm)
+  - [Original flight data and other details](https://www.buran.ru/htm/algoritm.htm)
 - [Wikipedia](https://en.wikipedia.org/wiki/Buran_\(spacecraft\))
 - [NASA-TP-170019800023921](https://ntrs.nasa.gov/citations/19800023921)
 
+### Licenses
+- Source code - see LICENSE
+- Satellite photos are from [Google Maps](https://maps.google.com), and I'am not sure about a legal use, so consider replacing them
+- Flight data source plot [not included]
+- Quartz regular font [not included]
+
 ---
-[Open online](https://enuiskov.github.io/ssp-flight-1k1/UVS/Release/ssp-flight-1k1/index.html)
+[Open online](https://enuiskov.github.io/ssp-flight-1k1/UVS/Release/ssp-flight-1k1/index.html) - try Chromium-based web browser for best performance.
